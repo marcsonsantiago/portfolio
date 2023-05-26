@@ -1,0 +1,15 @@
+@import url(./01header.css);
+@import url(./02perfil.css);
+@import url(./03experiencia.css);
+@import url(./04formacao.css);
+
+:root {
+  font-size: 16px;
+}
+
+body {  
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Fira Sans', Verdana;
+}

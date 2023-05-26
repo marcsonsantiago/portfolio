@@ -1,0 +1,40 @@
+.perfil {
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.perfil img {
+  width: 150px;
+  height: auto;
+}
+
+.perfil-resumo {
+  margin: 0;
+  padding: 0;
+  color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.perfil-resumo h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.perfil-resumo p {
+  font-size: 1.125rem;
+}
+
+.perfil-resumo-detalhe::before {
+  content: "";
+  background-image: linear-gradient(#70DA1C, #CCF235);
+  width: 40px;
+  height: 10px;
+  position: absolute;
+}
