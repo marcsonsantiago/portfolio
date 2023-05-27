@@ -11,12 +11,6 @@
   gap: 30px;
 }
 
-.experiencia-empresa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .experiencia-titulo {
   text-transform: uppercase;
   color: #5f5f5f;
@@ -46,16 +40,6 @@
 
   .experiencia-empresa p, ul {
     margin: 0;
-  }
-
-  .experiencia-empresa p {
-    padding: 10px;
-    line-height: 0.8;
-  }
-
-  .experiencia-texto {
-    display: flex;
-    align-self: start;
   }
 
   .experiencia-empresa span {
