@@ -108,10 +108,71 @@
 text-align: end;
 }
 
-.formacao-intensivo::before {
-  content: url(../img/cursos.svg);
+@media (max-width: 991px) {
+  .formacao-intensivo::before {
+    content: url(../img/cursos.svg);
+  }
+
+  .formacao-idiomas::before {
+    content: url(../img/idiomas.svg);
+  }
 }
 
-.formacao-idiomas::before {
-  content: url(../img/idiomas.svg);
+@media (min-width: 992px) {
+  .formacao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 60px;
+    gap: 50px;
+  }
+
+  .formacao-titulo {
+    width: 360px;
+    font-size: 5rem;
+    align-self: start;
+    padding: 0;
+  }
+
+  .formacao-titulo h3 {
+    word-break: break-word;
+    max-width: 3.3ch;
+    color: #000;
+  }
+
+  .formacao-resumo-texto {
+    padding: 0 0 40px 0;
+    text-align: start;
+  }
+
+  .formacao-container {
+    padding-bottom: 40px;
+    margin: 0;
+    justify-content: start;
+  }
+
+  .formacao-intensivo, .formacao-idiomas {
+    padding: 0;
+  }
+
+  .formacao-intensivo {
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .formacao-intensivo::before {
+    content: url(../img/cursos.svg);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+  }
+
+  .formacao-idiomas {
+    position: relative;
+  }
+
+  .formacao-idiomas::before {
+    content: url(../img/idiomas.svg);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+  }
 }

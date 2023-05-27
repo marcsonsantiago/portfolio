@@ -17,6 +17,10 @@
   font-size: 2.5rem;
 }
 
+.experiencia-titulo h2 {
+  margin: 30px;
+}
+
 .experiencia-resumo-intro {
   padding: 0 20px;
   text-align: center;
@@ -93,4 +97,36 @@
     display: flex;
     justify-content: start;
     align-self: start;
+  }
+
+  @media (min-width: 992px) {
+    .experiencia {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 50px;
+      margin: 60px;
+    }
+
+    .experiencia-titulo {
+      width: 360px;
+      font-size: 5rem;
+      align-self: start;
+    }
+
+    .experiencia-titulo h2 {
+      margin: 0;
+      word-break: break-word;
+      max-width: 4ch;
+      color: #E0E0E0;
+    }
+
+    .experiencia-empresa {
+      gap: 10px 30px;
+      margin: 0;
+    }
+
+    .experiencia-resumo-intro {
+      padding: 0;
+      text-align: start;
+    }
   }

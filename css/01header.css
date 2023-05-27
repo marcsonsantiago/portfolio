@@ -26,3 +26,19 @@
   width: 104px;
   height: auto;
 }
+
+@media (min-width: 992px) {
+  .header {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 0;
+  }
+
+  .header img {
+    margin-left: 60px;
+  }
+
+  .header nav {
+    margin-right: 60px;
+  }
+}

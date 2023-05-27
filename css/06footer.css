@@ -4,3 +4,9 @@
   font-size: 1.125rem;
   padding: 10px 20px;
 }
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 20px 60px;
+  }
+}

@@ -3,6 +3,7 @@
   display: flex;
   padding: 30px 20px;
   gap: 20px;
+  position: relative;
 }
 
 .contato h4 {
@@ -22,4 +23,59 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.contato-lista img {
+  width: 13px;
+  height: auto;
+}
+
+@media (max-width:767px) {
+.contato::before {
+  content: "";
+  background-image: linear-gradient(#70DA1C, #CCF235);
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  top: -4px;
+}
+}
+
+@media (min-width: 768px) {
+  .contato::before {
+    content: url(../img/detalhe.svg);
+    position: absolute;
+    top: -64px;
+    left: 20px;
+  }
+
+  .contato {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contato {
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+  }
+
+  .contato h4 {
+    font-size: 1.5rem;
+  }
+
+  .contato-lista a, .contato-lista p {
+    font-size: 2.25rem;
+  }
+
+  .contato-lista img {
+    width: 26px;
+    height: auto;
+  }
+
+  .contato-intro {
+    width: 360px;
+  }
 }
