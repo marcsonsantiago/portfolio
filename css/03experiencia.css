@@ -26,20 +26,42 @@
 .experiencia-resumo-intro {
   padding: 0 20px;
   text-align: center;
+  color: #525252;
+  }
+
+  .experiencia-resumo-intro strong {
+    color: #000;
   }
 
   .experiencia-empresa {
     margin: 0 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #d0d0d0;
     border-radius: 5px;
+    gap: 10px;
     position: relative;
+  }
+
+  .experiencia-empresa p, ul {
+    margin: 0;
+  }
+
+  .experiencia-empresa p {
+    padding: 10px;
+    line-height: 0.8;
+  }
+
+  .experiencia-texto {
+    display: flex;
+    align-self: start;
   }
 
   .experiencia-empresa span {
     position: absolute;
-    top: 0;
+    top: 5px;
+    left: 5px;
   }
 
   .experiencia-empresa::before {
@@ -48,11 +70,12 @@
     height: 20px;
     background-image: linear-gradient(#70DA1C, #CCF235);
     position: absolute;
-    top: 0;
+    top: 3px;
     left: -5px;
   }
 
   .experiencia-empresa h3 {
+    margin: 20px 0 0 0;
     color: #000;
     font-size: 1.125rem;
     line-height: 1.1;
@@ -67,10 +90,7 @@
   .experiencia-empresa ul {
     color: #141414;
     font-size: 0.875rem;
-    line-height: 1.1;
-  }
-
-  .experiencia-empresa ul {
+    line-height: 1;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -80,8 +100,13 @@
 
   .experiencia-empresa li {
     background-color: #fff;
-    text-align: center;
-    align-self: center;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
+  }
+
+  .experiencia-lista {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-self: start;
   }

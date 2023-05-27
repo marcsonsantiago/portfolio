@@ -1,0 +1,25 @@
+.contato {
+  background-color: #000;
+  display: flex;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+.contato h4 {
+  font-weight: 400;
+  margin: 0;
+  color: #ccc;
+  font-size: 1.125rem;
+}
+
+.contato a, p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.contato-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

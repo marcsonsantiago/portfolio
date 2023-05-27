@@ -29,6 +29,7 @@
 
 .perfil-resumo p {
   font-size: 1.125rem;
+  color: #525252;
 }
 
 .perfil-resumo-detalhe::before {
